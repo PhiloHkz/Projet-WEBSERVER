@@ -12,6 +12,16 @@ import PrestationList from '../components/prestations/PrestationList.vue'
 import AddPrestation from '../components/prestations/AddPrestation.vue'
 import UpdatePrestation from '../components/prestations/UpdatePrestation.vue'
 
+import RendezvousList from '../components/rendezvous/RendezvousList.vue'
+import AddRendezvous from '../components/rendezvous/AddRendezvous.vue'
+import UpdateRendezvous from '../components/rendezvous/UpdateRendezvous.vue'
+
+import RolesList from '../components/roles/RolesList.vue'
+import AddRoles from '../components/roles/AddRoles.vue'
+import UpdateRoles from '../components/roles/UpdateRoles.vue'
+
+
+
 
 
 const router = createRouter({
@@ -116,7 +126,45 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       // component: () => import('../views/AboutView.vue')
-    }
+    },
+
+
+    {
+      path: '/rendezvous',
+      name: 'home1',
+      component: RendezvousList
+    },
+
+    {
+      path: '/nouveau-Rendezvous',
+      name: 'nouveau',
+      component: AddRendezvous
+    },
+
+    {
+      path: '/mise-a-jour-rendezvous/:id',
+      name: 'mise-a-jour',
+      component: UpdateRendezvous
+    },
+
+    {
+      path: '/role',
+      name: 'home2',
+      component: RolesList
+    },
+    
+    {
+      path: '/nouveau-role',
+      name: 'nouveau',
+      component: AddRoles
+    },
+
+    {
+      path: '/mise-a-jour-role/:id',
+      name: 'mise-a-jour',
+      component: UpdateRoles
+    },
+
 
  
   ]
