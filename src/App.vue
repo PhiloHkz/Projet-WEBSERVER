@@ -6,15 +6,17 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="d-flex flex-column justify-content-center flex-grow-1"> 
     <div class="header">
     <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+      <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
       <nav>
         <RouterLink to="/">Liste des departements</RouterLink>
-         <RouterLink to="/facturation">Liste des facturations</RouterLink>
-          <RouterLink to="/hospitals">Liste des hopitaux</RouterLink>
+          <RouterLink to="/facturation">Liste des facturations</RouterLink>
+           <RouterLink to="/hospitals">Liste des hopitaux</RouterLink>
            <RouterLink to="/prestations">Liste des prestations</RouterLink>
+           <RouterLink to="/rendezvous">Liste des rendez vous</RouterLink>
+           <RouterLink to="/role">Liste des roles</RouterLink>
         <RouterLink to="/utilisateurs">Liste des utilisateurs</RouterLink>
       </nav>
-  </header>
+   </header>
   </div>
  
   <div class="donnee">
