@@ -11,6 +11,9 @@ import UpdateHopital from '../components/hospitals/UpdateHopital.vue'
 import PrestationList from '../components/prestations/PrestationList.vue'
 import AddPrestation from '../components/prestations/AddPrestation.vue'
 import UpdatePrestation from '../components/prestations/UpdatePrestation.vue'
+import UtilisateurList from '../components/utilisateurs/UtilisateurList.vue'
+import AddUtilisateur from '../components/utilisateurs/addUtilisateur.vue'
+import UpdateUtilisateur from '../components/utilisateurs/updateUtilisateur.vue'
 
 
 
@@ -116,9 +119,32 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       // component: () => import('../views/AboutView.vue')
-    }
+    },
+    {
+      path: '/users',
+      name: 'home7',
+      component: UtilisateurList
+    },
+    
+    {
+      path: '/nouveau-utilisateur',
+      name: 'nouveau',
+      component: AddUtilisateur
+    },
 
- 
+    {
+      path: '/mise-a-jour-utilisateur/:id',
+      name: 'mise-a-jour',
+      component: UpdateUtilisateur
+    },
+    {
+      path: '/utilisateurs',
+      name: 'utilisateurs',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      // component: () => import('../views/AboutView.vue')
+    }
   ]
 })
 
